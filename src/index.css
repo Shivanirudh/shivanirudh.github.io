@@ -1,3 +1,11 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +13,242 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  line-height: 1.5;
+  color: white;
+  background-color: transparent;
+  overflow-x: hidden;
+  height:100%;
+  width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #6649b8;
+}
+
+.root {
+  min-height: 100%;
+  position: relative;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 300;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+th{
+  text-align: left;
+  justify-content: left;
+  padding: 80px;
+}
+td{
+  text-align: right;
+  justify-content: right;
+  padding: 80px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/* App.js */
+.particles{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(#e26120, #601f6c, #42114b, #34033d);
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-weight: 400;
+  width: 100%;
+}
+/*-------------------------------------------------------------------------------------------------*/
+/* HomePage.js */
+
+.header{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  height: 100%;
+}
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-transform: none;
+  font-size: 40px;
+  position: relative;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 7rem;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/* Navigation.js */
+
+/* General sidebar and items*/
+.sidebar{
+  background-color: #433d3a;
+  transition: width 600ms ease;
+  position: fixed;
+  top:0;
+  overflow: hidden;
+  z-index: 2;
+  width: 5rem;
+  height: 100vh;
+}
+
+.sidebar-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.link{
+  width: 100%;
+  align-self: center;
+  margin-left: 2rem;
+}
+
+.sidebar-item{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: white;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 600ms;
+}
+
+.sidebar-item-name{
+  display: none;
+  margin-left: 1rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar-item FontAwesomeIcon{
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+/*Logo-icon on top of navigation bar */
+.menu-icon{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+  background: #433d3a;
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.menu-icon .logo-icon{
+  transform: rotate(0deg);
+  transition: 600ms;
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.menu-icon-name{
+  display: inline;
+  position: absolute;
+  font-weight: 500;
+  font-size: 40px;
+  left: -999px;
+  transition: 600ms;
+}
+
+/*Sidebar and items under hover */
+.sidebar:hover{
+  width: 16rem;
+}
+
+.sidebar:hover .sidebar-item-name{
+  display: inline;
+  margin-left: 1rem;
+}
+
+.sidebar:hover .sidebar-item{
+  justify-items: left;
+}
+
+.sidebar-item:hover{
+  width: 100%;
+  filter: grayscale(0%) opacity(1);
+  background: #e26120;
+  color: white;
+}
+
+.sidebar:hover .menu-icon .logo-icon{
+  transform: rotate(-180deg);
+  margin-left: 11rem;
+}
+
+.sidebar:hover .menu-icon-name{
+  left: 2rem;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/* About.js */
+
+.about{
+  text-align: center;
+  width:100%;
+}
+
+.details{
+  margin-top: 3rem;
+  width: 90%;
+  margin-left: 10rem;
+}
+
+.detail-item{
+  width: 60%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.item-head{
+  font-weight: 800;
+}
+
+.item-value{
+  font-weight: 500;
 }
