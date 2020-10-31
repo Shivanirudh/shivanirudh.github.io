@@ -7,6 +7,7 @@ import Timeline from "./components/Navigation";
 import About from "./components/About";
 import Navigation from "./components/Navigation";
 function App() {
+
   const particleParams = {
     fpsLimit: 60,
     particles: {
