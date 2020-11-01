@@ -29,6 +29,7 @@ export class Window extends Component {
     render() {
         return (
             <div class="cv">
+                
                 <Document className="pdf"
                  file={process.env.PUBLIC_URL+"/CV.pdf"}
                  onLoadSuccess={this.onDocumentLoadSuccess}

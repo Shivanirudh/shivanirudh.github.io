@@ -105,10 +105,7 @@ export class About extends Component {
                                 <span className="item-value">
                                     <button className={btn_class} onClick={this.toggle}><FontAwesomeIcon icon={faAngleDoubleDown}/></button>
                                 </span>
-                        </div>
-                     }       
-                    </Spring>
-                    <Transition
+                                <Transition
                     native
                     items={this.state.showCV}
                     from={{ opacity: 0 }}
@@ -124,6 +121,10 @@ export class About extends Component {
                         ))
                     }
                     </Transition>
+                        </div>
+                     }       
+                    </Spring>
+                    
                 </div>
             </div>
         )

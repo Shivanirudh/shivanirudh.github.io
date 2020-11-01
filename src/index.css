@@ -32,15 +32,15 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: #433d3a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background: #6649b8;
+  background: #e26120;
 }
 
 .root {
@@ -226,13 +226,18 @@ a:link, a:visited{
   width:100%;
 }
 
+.about-head{
+  position: relative;
+  left:-10rem;
+}
+
 .media-icons{
   font-size: 40px;
 }
 .details{
   margin-top: 3rem;
   width: 80%;
-  margin-left: auto;
+  margin-left: 7rem;
   margin-right:  auto;
   font-size: 40px;
   align-items: center;
@@ -302,25 +307,64 @@ a:link, a:visited{
 /* Window.js */
 
 .cv{
-  width: 80%;
+  width: 100%;
   position: relative;
-  margin-top: 3rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-.pdf{
-  position: relative;
-  margin-left: 7rem;
-  margin-right: auto;
+  left: -33rem;
 }
 
 .page{
   width: fit-content;
   height: fit-content;
   align-items: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
 }
 
 .doc-buttons{
   font-size: 20px;
   padding: 2rem;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/* Timeline.js */
+
+.timeline{
+  width: 100%;
+  height: 100%;
+}
+
+.timeline-head{
+  position: relative;
+  left: 15rem;
+}
+
+.timeline-text{
+  position: relative;
+  left:5rem;
+  font-size: 30px;
+  text-align: center;
+}
+
+.vertical-timeline-element--work .vt-content{
+  display: none;
+}
+
+.vertical-timeline-element--work:hover .vt-content{
+  display: inline;
+}
+
+.vertical-timeline-element--education .vt-content{
+  display: none;
+}
+
+.vertical-timeline-element--education:hover .vt-content{
+  display: inline;
+}
+
+.vertical-timeline-element--project .vt-content{
+  display: none;
+}
+
+.vertical-timeline-element--project:hover .vt-content{
+  display: inline;
 }

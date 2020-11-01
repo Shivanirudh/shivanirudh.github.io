@@ -3,7 +3,7 @@ import Particles from "react-particles-js";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import HomePage from "./components/HomePage";
-import Timeline from "./components/Navigation";
+import Timeline from "./components/Timeline";
 import About from "./components/About";
 import Navigation from "./components/Navigation";
 function App() {
