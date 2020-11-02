@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Spring } from "react-spring/renderprops";
 import { Transition, animated } from "react-spring/renderprops";
+/*import {PDFDownloadLink} from '@react-pdf/renderer';*/
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
@@ -46,7 +47,9 @@ export class About extends Component {
 
             <div className="about">
                 <h1 className="about-head">Owner Info</h1>
-                <img  className="picture" src={ProPic} alt="ProfilePicture" height="250px" width="250px" style={{borderRadius:"50%"}}/>
+                <div  className="picture">
+                <img src={ProPic} alt="ProfilePicture" height="250px" width="250px" style={{borderRadius:"50%"}}/>
+                </div>
                 <div className="media-icons">
                         <a href="mailto:shivanirudh2001@gmail.com" target="blank"><FontAwesomeIcon icon={faEnvelope}/></a>
                         &nbsp;&nbsp;
@@ -116,6 +119,9 @@ export class About extends Component {
                         show &&
                         (props => (
                         <animated.div style={props}>
+                            {/*<PDFDownloadLink document={<Window />} fileName="Shivanirudh.pdf">
+                                {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
+                        </PDFDownloadLink>*/}
                             <Window />
                         </animated.div>
                         ))

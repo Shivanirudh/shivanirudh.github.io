@@ -113,7 +113,7 @@ export class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">SSN College of Engineering, Chennai</h4>
                         <p className="vt-content">
                             Read more at: &nbsp;
-                            <a href="https://www.ssn.edu.in" target="blank">SSN College of Engineering</a>
+                            <a href="https://www.ssn.edu.in" target="blank"><u>SSN College of Engineering</u></a>
                         </p>
                     </VerticalTimelineElement>
 
