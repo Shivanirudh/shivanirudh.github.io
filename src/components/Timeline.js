@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faUniversity} from '@fortawesome/free-solid-svg-icons';
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import {faCode} from '@fortawesome/free-solid-svg-icons';
+import {faLink} from '@fortawesome/free-solid-svg-icons';
 export class Timeline extends Component {
     render() {
         return (
@@ -29,7 +30,7 @@ export class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">React JS</h4>
                         <p className="vt-content">
                             Portfolio website written in React JS, hosted by GitHub Pages.<br/>
-                            <a href="https://github.com/Shivanirudh/shivanirudh.github.io" target="blank"><u>Link to GitHub repo</u></a>
+                            <a href="https://github.com/Shivanirudh/shivanirudh.github.io" target="blank"><FontAwesomeIcon icon = {faLink}/>     <u>Link to GitHub repo</u></a>
                         </p>
                     </VerticalTimelineElement>
 
@@ -62,7 +63,7 @@ export class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">Python</h4>
                         <p className="vt-content">
                             Machine Learning models to classify delayed flights and estimate amount of delay<br/>
-                            <a href="https://github.com/Shivanirudh/FlightDelayPrediction" target="blank"><u>Link to GitHub repo</u></a>
+                            <a href="https://github.com/Shivanirudh/FlightDelayPrediction" target="blank"><FontAwesomeIcon icon = {faLink}/>     <u>Link to GitHub repo</u></a>
                         </p>
                     </VerticalTimelineElement>
                     
@@ -79,7 +80,7 @@ export class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">Python, MySQL</h4>
                         <p className="vt-content">
                             Python web application that uses MySQL to make a very simple To-do list<br/>
-                            <a href="https://github.com/Shivanirudh/ToDoList" target="blank"><u>Link to GitHub repo</u></a>
+                            <a href="https://github.com/Shivanirudh/ToDoList" target="blank"><FontAwesomeIcon icon = {faLink}/>     <u>Link to GitHub repo</u></a>
                         </p>
                     </VerticalTimelineElement>
 
@@ -96,7 +97,7 @@ export class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">C, C++</h4>
                         <p className="vt-content">
                             C application that creates a simulation of the classic Minesweeper game on a variable grid<br/>
-                            <a href="https://github.com/Shivanirudh/Minesweeper" target="blank"><u>Link to GitHub repo</u></a>
+                            <a href="https://github.com/Shivanirudh/Minesweeper" target="blank"><FontAwesomeIcon icon = {faLink}/>     <u>Link to GitHub repo</u></a>
                         </p>
                     </VerticalTimelineElement>
 
@@ -113,7 +114,7 @@ export class Timeline extends Component {
                         <h4 className="vertical-timeline-element-subtitle">SSN College of Engineering, Chennai</h4>
                         <p className="vt-content">
                             Read more at: &nbsp;
-                            <a href="https://www.ssn.edu.in" target="blank"><u>SSN College of Engineering</u></a>
+                            <a href="https://www.ssn.edu.in" target="blank"><FontAwesomeIcon icon = {faLink}/>     <u>SSN College of Engineering</u></a>
                         </p>
                     </VerticalTimelineElement>
 

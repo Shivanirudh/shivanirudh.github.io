@@ -352,6 +352,7 @@ a:link, a:visited{
   left:5rem;
   font-size: 30px;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 .vertical-timeline-element--work .vt-content{
