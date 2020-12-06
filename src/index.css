@@ -107,16 +107,18 @@ a:link, a:visited{
 /*-------------------------------------------------------------------------------------------------*/
 /* Navigation.js */
 
+main{
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
 /* General sidebar and items*/
 .sidebar{
   background-color: #433d3a;
   transition: width 600ms ease;
   position: fixed;
-  top:0;
   overflow: hidden;
   z-index: 2;
-  width: 5rem;
-  height: 100vh;
 }
 
 .sidebar-links{
@@ -131,8 +133,14 @@ a:link, a:visited{
 
 .link{
   width: 100%;
-  align-self: center;
-  margin-left: 2rem;
+}
+
+.link:last-child{
+  margin-top: auto;
+}
+
+.social-media-icons{
+  display: none;
 }
 
 .sidebar-item{
@@ -152,7 +160,8 @@ a:link, a:visited{
   font-weight: 500;
 }
 
-.sidebar-item FontAwesomeIcon{
+.sidebar-item .link-icon{
+  font-size: 40px;
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
@@ -172,11 +181,12 @@ a:link, a:visited{
 }
 
 .menu-icon .logo-icon{
-  transform: rotate(0deg);
-  transition: 600ms;
+  font-size: 40px;
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
+  transform: rotate(0deg);
+  transition: 600ms;
 }
 
 .menu-icon-name{
@@ -189,21 +199,8 @@ a:link, a:visited{
 }
 
 /*Sidebar and items under hover */
-.sidebar:hover{
-  width: 16rem;
-}
-
-.sidebar:hover .sidebar-item-name{
-  display: inline;
-  margin-left: 1rem;
-}
-
-.sidebar:hover .sidebar-item{
-  justify-items: left;
-}
 
 .sidebar-item:hover{
-  width: 100%;
   filter: grayscale(0%) opacity(1);
   background: #e26120;
   color: white;
@@ -211,12 +208,9 @@ a:link, a:visited{
 
 .sidebar:hover .menu-icon .logo-icon{
   transform: rotate(-180deg);
-  margin-left: 11rem;
 }
 
-.sidebar:hover .menu-icon-name{
-  left: 2rem;
-}
+
 
 /*-------------------------------------------------------------------------------------------------*/
 /* About.js */
@@ -237,10 +231,9 @@ a:link, a:visited{
 }
 
 .media-icons{
-  width: 100%;
-  text-align: center;
-  font-size: 40px;
+  display: none;
 }
+
 .details{
   margin-top: 3rem;
   width: 80%;
@@ -377,4 +370,72 @@ a:link, a:visited{
 
 .vertical-timeline-element--project:hover .vt-content{
   display: inline;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*Media queries*/
+/*Small screens*/
+@media only screen and (max-width: 600px){
+  .sidebar{
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  .sidebar-links{
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .link{
+    justify-content: center;
+  }
+
+  .media-icons{
+    display: inline;
+    width: 100%;
+    margin-left: 8.5rem;
+    font-size: 40px;
+  }
+
+  main{
+    margin: 0;
+  }
+}
+
+/*Larger screens*/
+@media only screen and (min-width: 600px){
+  .sidebar{
+    top:0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .sidebar:hover{
+    width: 16rem;
+  }
+
+  .sidebar:hover .sidebar-item-name{
+    display: inline;
+  }
+
+  .sidebar:hover .menu-icon .logo-icon{
+    margin-left: 11rem;
+  }
+
+  .sidebar:hover .menu-icon-name{
+    left: 0px;
+  }
+
+  .sidebar:hover .social-media-icons{
+    display: inline;
+    margin-left: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
 }

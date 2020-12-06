@@ -53,7 +53,7 @@ export class About extends Component {
                 <div className="media-icons">
                         <a href="mailto:shivanirudh2001@gmail.com" target="blank"><FontAwesomeIcon icon={faEnvelope}/></a>
                         &nbsp;&nbsp;
-                        <a href="https://www.linkedin.com/in/shivanirudh-s-g-b47265199/" target="blank"><FontAwesomeIcon icon={faLinkedin}/></a>
+                        <a href="https://www.linkedin.com/in/shivanirudh-s-g/" target="blank"><FontAwesomeIcon icon={faLinkedin}/></a>
                         &nbsp;&nbsp;
                         <a href="https://github.com/Shivanirudh" target="blank"><FontAwesomeIcon icon={faGithub}/></a>
                         &nbsp;&nbsp;
