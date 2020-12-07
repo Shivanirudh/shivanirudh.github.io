@@ -107,11 +107,6 @@ a:link, a:visited{
 /*-------------------------------------------------------------------------------------------------*/
 /* Navigation.js */
 
-main{
-  margin-left: 5rem;
-  padding: 1rem;
-}
-
 /* General sidebar and items*/
 .sidebar{
   background-color: #433d3a;
@@ -402,9 +397,6 @@ main{
     font-size: 40px;
   }
 
-  main{
-    margin: 0;
-  }
 }
 
 /*Larger screens*/
