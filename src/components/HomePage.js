@@ -10,35 +10,22 @@ export class HomePage extends Component {
         return (
             <div>
             <div className="header">
-                <Spring 
-                 from={{opacity:0, marginTop:-100}}
-                 to={{opacity:1, marginTop:0}}
-                 config={config.slow}>
-                    {props => <h1 style = {props}>Welcome</h1>}
-                </Spring>
+                <h1>Welcome</h1>
             </div>
             <span className="intro">
-                <Spring 
-                 from={{opacity:0}}
-                 to={{opacity:1}}
-                 config={{delay:1000, duration:400}}>
-                    {props => 
-                        <div style={props}>
-                        <img  className="picture" src={ProPic} alt="ProfilePicture" height="350px" width="350px" style={{borderRadius:"50%"}}/>
-                        </div>
-                    }
-                </Spring>
-                <Spring
-                 from={{opacity:0}}
-                 to={{opacity:1}}
-                 config={{delay:1500, duration:500}}>
-                    {props => 
-                        <h2 style={props}>I am SHIVANIRUDH.<br/>
-                        Nice to meet you!
-                        </h2>
-                    }
-                </Spring>
+                <div>
+                    <img  className="picture" src={ProPic} alt="ProfilePicture" height="350px" width="350px" style={{borderRadius:"50%"}}/>
+                </div>
+                <h2>I am <b>SHIVANIRUDH</b>.<br/>
+                    <p style={{fontSize: "40px"}}> 
+                        Nice to meet you! <br/> 
+                        Feel free to look around my portfolio and reach out.<br/> 
+                        <b>Thanks for stopping by!</b>
+                    </p>
+                </h2>
             </span>
+           
+            
             </div>
         )
     }
