@@ -218,9 +218,15 @@ a:link, a:visited{
   left:15rem;
 }
 
-.picture{
+.section1{
+  height: 30%;
   width: 100%;
-  text-align: center;
+  top: 2rem;
+}
+
+.picture{
+  width: 30%;
+  text-align: right;
 }
 
 .details{
@@ -235,9 +241,6 @@ a:link, a:visited{
 
 .detail1{
   display: flex;
-  background-color: #433d3a;
-  border: 2px solid black;
-  border-bottom: 1px solid black;
   margin-bottom: 1rem;
   height: auto;
 }
@@ -247,12 +250,13 @@ a:link, a:visited{
 }
 
 .item-value{
-  display: inline;
+  display: flex;
+  margin-bottom: 1rem;
+  height: auto;
   font-weight: 500;
   margin-left: 20rem;
   margin-right: 1rem;
   text-align: center;
-  width:50%
 }
 
 .int-button{
