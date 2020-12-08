@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import { Spring } from "react-spring/renderprops";
 import { Transition, animated } from "react-spring/renderprops";
-/*import {PDFDownloadLink} from '@react-pdf/renderer';*/
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {faAngleLeft} from '@fortawesome/free-solid-svg-icons';
 import {faAngleDoubleDown} from '@fortawesome/free-solid-svg-icons';
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
-import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import {faInstagram} from '@fortawesome/free-brands-svg-icons';
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 import ProPic from "./images/Profile.jpg";
 import Window from "./Window";
@@ -49,15 +44,6 @@ export class About extends Component {
                 <h1 className="about-head">Owner Info</h1>
                 <div  className="picture">
                 <img src={ProPic} alt="ProfilePicture" height="250px" width="250px" style={{borderRadius:"50%"}}/>
-                </div>
-                <div className="media-icons">
-                        <a href="mailto:shivanirudh2001@gmail.com" target="blank"><FontAwesomeIcon icon={faEnvelope}/></a>
-                        &nbsp;&nbsp;
-                        <a href="https://www.linkedin.com/in/shivanirudh-s-g/" target="blank"><FontAwesomeIcon icon={faLinkedin}/></a>
-                        &nbsp;&nbsp;
-                        <a href="https://github.com/Shivanirudh" target="blank"><FontAwesomeIcon icon={faGithub}/></a>
-                        &nbsp;&nbsp;
-                        <a href="https://instagram.com/shiv_anirudh" target="blank"><FontAwesomeIcon icon={faInstagram}/></a>
                 </div>
                 <div className="details">
                     <Spring
