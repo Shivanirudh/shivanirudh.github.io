@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import HomePage from "./components/HomePage";
 import Timeline from "./components/Timeline";
-import About from "./components/About";
+import Owner from "./components/Owner";
 import Navigation from "./components/Navigation";
 function App() {
 
@@ -49,7 +49,7 @@ function App() {
             <HomePage/>
           </Route>
           <Route exact path="/about">
-            <About/>
+            <Owner/>
           </Route>
           <Route exact path="/timeline">
             <Timeline/>

@@ -224,40 +224,12 @@ a:link, a:visited{
   top: 2rem;
 }
 
-.picture{
-  width: 30%;
-  text-align: right;
-}
-
-.details{
-  margin-top: 3rem;
-  width: 80%;
-  margin-left: 7rem;
-  margin-right:  auto;
-  font-size: 40px;
-  align-items: center;
-  
-}
-
 .detail1{
   display: flex;
   margin-bottom: 1rem;
   height: auto;
 }
-.item-head{
-  margin-left: 1rem;
-  font-weight: 800;
-}
 
-.item-value{
-  display: flex;
-  margin-bottom: 1rem;
-  height: auto;
-  font-weight: 500;
-  margin-left: 20rem;
-  margin-right: 1rem;
-  text-align: center;
-}
 
 .int-button{
   background-color: transparent;
@@ -296,6 +268,58 @@ a:link, a:visited{
   width: 5rem;
 }
 
+/*-------------------------------------------------------------------------------------------------*/
+/*Owner.js*/
+.owner{
+  height:100%;
+  width:100%;
+}
+
+.owner-head{
+  position: relative;
+  left:15rem;
+}
+
+.name-pic{
+  display: flex;
+  flex-direction: row; 
+  height: 30%;
+}
+
+.picture{
+  width: 30%;
+  text-align: right;
+}
+
+.details{
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin-top: 5rem;
+  margin-left: auto;
+  font-size: 40px;  
+}
+
+.item{
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+  height: auto;
+  margin-right: 1rem;
+  text-align: justify;
+}
+
+.item-head{
+  margin-left: 1rem;
+  margin-right: 5rem;
+  font-weight: 800;
+  width:20%;
+  text-align: justify;
+}
+
+.item-value{
+  height: auto;
+  text-align: justify;
+}
 /*-------------------------------------------------------------------------------------------------*/
 /* Window.js */
 
