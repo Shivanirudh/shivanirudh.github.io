@@ -13,9 +13,9 @@ export class Timeline extends Component {
             <div className="timeline" style={{paddingBottom:"3rem"}}>
                 <h1 className="timeline-head">Timeline</h1>
                 <p className="timeline-text">
-                    The timeline below shows my education, experience and documented projects.
+                    The timeline below shows my education, experience and documented projects. <br/>
+                    Hover on a label to read more.
                 </p>
-                <p className="timeline-text">Hover on a label to read more.</p>
                 <VerticalTimeline style={{marginTop:"3rem", paddingBottom:"2rem"}}>
                     {/*Project:Website*/}
                     <VerticalTimelineElement
