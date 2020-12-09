@@ -23,7 +23,7 @@ export class HomePage extends Component {
             <span className="intro">
                 <Zoom cascade>
                     <div>
-                        <img  className="picture" src={ProPic} alt="ProfilePicture" height="350px" width="350px" style={{borderRadius:"50%"}}/>
+                        <img  className="intro-picture" src={ProPic} alt="ProfilePicture" height="350px" width="350px" style={{borderRadius:"50%"}}/>
                     </div>
                     <div>
                     <h2>I am <b>SHIVANIRUDH</b>.<br/>
