@@ -346,6 +346,24 @@ a:link, a:visited{
   height: 25px;
   width: 25px;
 }
+
+.bio-interests{
+  font-size: 25px;
+  text-align: justify;
+  word-wrap: normal;
+  padding-bottom: 3rem;
+}
+/*
+.answer{
+  text-transform: none;
+  text-decoration: none;
+}
+
+.bio:hover .answer{
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: underline;
+}*/
 /*-------------------------------------------------------------------------------------------------*/
 /* Window.js */
 
