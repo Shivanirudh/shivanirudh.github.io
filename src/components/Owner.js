@@ -18,12 +18,12 @@ export class Owner extends Component {
                         <img src={ProPic} alt="ProfilePicture" height="250px" width="250px" style={{borderRadius:"50%"}}/>
                     </div>
                     <div className="details">
-                        <p align="center" className="item">
-                            <b className="item-head">Name  :</b> &nbsp;&nbsp;
+                        <p className="item">
+                            <b className="item-head">Name :</b> 
                             <span className="item-value">Shivanirudh S G</span>
                         </p>
-                        <p align="center" className="item">
-                            <b className="item-head">Role  :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p className="item">
+                            <b className="item-head">Role :</b> 
                             <span className="item-value">Programmer/Software Developer</span>
                         </p>
                     </div>
