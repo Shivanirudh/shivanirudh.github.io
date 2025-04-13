@@ -4,84 +4,29 @@ import { Link } from 'react-router-dom';
 import './Navigation.css'; // Create this file for styling
 
 function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isNavOpen, setNavOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+    const toggleNav = () => {
+        setNavOpen(!isNavOpen);
+    };
   return (
-    <nav className="navigation">
-      <div className="hamburger" onClick={toggleMenu}>
-        &#9776;
+    <header>
+      <div className={`nav-toggle ${isNavOpen ? 'open' : ''}`} onClick={toggleNav}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
-      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li>
-          <Link to="/" onClick={toggleMenu}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/about" onClick={toggleMenu}>
-            About
-          </Link>
-        </li>
-      </ul>
-    </nav>
+      <nav className={`nav-links ${isNavOpen ? 'open' : ''}`}>
+        <ul>
+          <li><Link to="/" onClick={toggleNav}>Home</Link></li>
+          <li><Link to="/about" onClick={toggleNav}>About</Link></li>
+          <li><Link to="/projects" onClick={toggleNav}>Projects</Link></li>
+          <li><Link to="/cv" onClick={toggleNav}>CV</Link></li>
+          <li><Link to="/contact" onClick={toggleNav}>Contact</Link></li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
 export default Navigation;
-```
-
-```
-/* Navigation.css */
-/*.navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  z-index: 1000;
-}
-
-.hamburger {
-  font-size: 24px;
-  cursor: pointer;
-  padding: 5px 10px;
-}
-
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-}
-
-.menu.open {
-  display: block;
-}
-
-.menu li {
-  padding: 10px;
-  text-align: center;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Basic animation */
-/*.menu {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-}*/
-/*
-.menu.open {
-  max-height: 200px; /* Adjust as needed */
-// }

@@ -4,6 +4,8 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import Projects from './Projects';
 import Contact from './Contact';
+import Background from './Background';
+import CV from './CV';
 
 // HomePage component
 function Home() {
@@ -23,11 +25,13 @@ function Home() {
         />
         <h1>Hello, I'm Shiva!</h1>
 
-        <p>Great to meet you!</p>
-        <div className="skills-list">
-          {skills.join(", ")}
+        <h3>Great to meet you!</h3>
+        <div className='tagline'>
+          <div className="skills-list">
+            {skills.join(", ")}
+          </div>
+          <p>I typically ask recruiters to point out which of these are pokemon.</p>
         </div>
-        <p>I typically ask recruiters to point out which of these are pokemon.</p>
       </div>
     </div>
   );
@@ -39,19 +43,42 @@ function About() {
     <div className="about-container">
       <div className="about-content">
         <h1>About Me</h1>
-        <p>
-          Hello! I'm Shivanirudh, a passionate and creative programmer based out of Chennai.
-          I am currently a student at IIIT Bangalore pursuing my postgraduate education in Computer Science and Engineering. I am interested in the fields of Machine Learning, Data Science and Natural Language Processing.
-        </p>
-        <p>
-          My journey in the world of coding began during my studies at SSN College of Engineering. Since then, I have been dedicated to continuous learning, staying updated with the latest technologies and industry trends.
-        </p>
-        <p>
-          I've had the privilege of working with amazing teams at Mad Street Den and this has allowed me to contribute to a variety of projects. I am proficient in languages such as Python and C++, and tools like PyTorch and OpenCV in addition to software like Git. I'm always excited to take on new challenges that allow me to expand my skill set. 
-        </p>
-        <p>
-        Outside of coding, you can find me playing basketball, or enjoying a good book
-        </p>
+        <div className='about-section'>
+          <div className='text-section'>
+          <p>
+            Hello! I'm <b>Shivanirudh</b>, a passionate programmer and AI/ML enthusiast based in Chennai. 
+            I'm currently pursuing my Master's in Computer Science at <b>IIIT Bangalore</b>, specializing in Artificial Intelligence and Machine Learning (graduating July 2025). 
+            I completed my Bachelor's in Computer Science from <b>SSN College of Engineering</b> in June 2018.
+          </p>
+
+          <p>
+            I've worked with organizations like <b>Everwell (Microsoft Research India)</b> and <b>Mad Street Den</b>, 
+            gaining hands-on experience with LLMs, real-world data pipelines, and building end-to-end ML applications. 
+            My interests lie in <b>Machine Learning</b>, <b>Natural Language Processing</b>, and <b>Data Science</b>.
+          </p>
+
+          <p>
+            Some of the projects I’ve worked on include <b>Flight Delay Prediction</b> using various ML models, 
+            a <b>Voice App Launcher</b> built in Python, an <b>AI-powered health data entry tool</b> (FillPat), and 
+            a <b>Personal Auto Prompt Generator</b> using Deep Learning with ChatGPT. 
+            I’ve also co-authored research on <i>Bayesian Uncertainty Modeling</i> for genre classification.
+          </p>
+
+          <p>
+            I’m proficient in <b>Python, C++, Java, and JavaScript</b>, and have worked with frameworks like 
+            <b>PyTorch, TensorFlow, Flask, and React</b>. I hold certifications from Google, Coursera, and NPTEL in areas 
+            including Deep Learning, NLP, and Competitive Programming.
+          </p>
+
+          <p>
+            Outside of work, I enjoy playing <b>basketball</b> and reading a good book.
+          </p>
+          </div>
+        </div>
+        <div className='cta-section'>
+          <p>Feel free to reach out for project collaborations and Open Source contributions. :)</p>
+          <a href="/contact" className="cta-button">Get in Touch</a>
+        </div>
       </div>
     </div>
   );
@@ -63,10 +90,12 @@ function App() {
     <HashRouter>
       <div className="App">
         <Navigation />
+        <Background />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} /> 
+          <Route path="/cv" element={<CV/>} />
           <Route path="/contact" element={<Contact />} />
           
         </Routes>
